@@ -52,7 +52,7 @@ public class Contact implements Comparable<Contact> {
 	 * otherwise validContact will return true. This will be expanded for Use
 	 * Case 1a.
 	 */
-	public boolean validContact() {
+	public boolean isValidContact() {
 
 		return true;
 
