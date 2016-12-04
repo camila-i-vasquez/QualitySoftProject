@@ -36,7 +36,8 @@ public class ContactList implements java.io.Serializable {
 	 * an ArrayList
 	 */
 	public void addContact(Contact newPerson) {
-
+		myContactList.add(newPerson);
+		// @ethan
 	}
 
 	/**
