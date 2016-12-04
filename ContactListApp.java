@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ContactListApp {
 	public static void main(String args[]) {
 
-		ContactListApp.taskTwoTest();
+		ContactListApp.taskThreeTest();
 	}
 
 	public static void taskTwoTest() {
