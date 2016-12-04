@@ -44,6 +44,7 @@ public class Contact implements Comparable<Contact> {
 		phoneNumber = input.nextLine();
 		output.print(NOTES_PROMPT);
 		notes = input.nextLine();
+		output.println();
 		//@Ethan
 	}
 
