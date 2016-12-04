@@ -53,8 +53,10 @@ public class Contact implements Comparable<Contact> {
 	 * and can use the prompt strings.
 	 */
 	public String toString() {
-
-		return "ToString functions!";
+		
+		return "Name:" + firstName + lastName + "\n" + STREET_ADDRESS_PROMPT + streetAddress + "\n"
+				+ EMAIL_ADDRESS_PROMPT + emailAddress + "\n" + PHONE_NUMBER_PROMPT + phoneNumber + "\n"
+				+ NOTES_PROMPT + notes + " \n";
 	}
 
 	/**
