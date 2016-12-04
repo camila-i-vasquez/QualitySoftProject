@@ -45,6 +45,8 @@ public class ContactListApp {
 	public static void taskThreeTest() {
 		Scanner input = new Scanner(System.in);
 		PrintStream output = System.out;
+		ContactList theList = new ContactList();
+
 		
 		Contact contactOne = new Contact();
 		contactOne.readContact(output, input);
