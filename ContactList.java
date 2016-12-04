@@ -50,7 +50,7 @@ public class ContactList implements java.io.Serializable {
 		int index = 0;
 		while (myContactList.size()> index) {
                              System.out.println(myContactList);
-                             index++
+                             index++;
 		}
 	}
 
