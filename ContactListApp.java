@@ -48,10 +48,12 @@ public class ContactListApp {
 		
 		Contact contactOne = new Contact();
 		contactOne.readContact(output, input);
+		theList.addContact(contactOne);
 		System.out.println(contactOne.toString());
 		
 		Contact contactTwo = new Contact();
 		contactTwo.readContact(output, input);
+		theList.addContact(contactTwo);
 		System.out.println(contactTwo.toString());
 		
 	}
