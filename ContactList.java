@@ -46,6 +46,9 @@ public class ContactList implements java.io.Serializable {
 	 * 
 	 */
 	public void printContactList(PrintStream out) {
+		while (myContactList.size()> index) {
+	            System.out.println(myContactList);
+	            index++ ;
 
 	}
 
