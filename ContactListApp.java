@@ -41,6 +41,22 @@ public class ContactListApp {
 
 		output.println("Compiled and ran");
 	}
+	
+	public static void taskThreeTest() {
+		Scanner input = new Scanner(System.in);
+		PrintStream output = System.out;
+		
+		Contact contactOne = new Contact();
+		contactOne.readContact(output, input);
+		System.out.println(contactOne.toString());
+		
+		Contact contactTwo = new Contact();
+		contactTwo.readContact(output, input);
+		System.out.pringln(contactOne.toString);
+		
+	}
+
+
 
 	public static void finalProgram() {
 		/**
