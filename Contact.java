@@ -69,8 +69,9 @@ public class Contact implements Comparable<Contact> {
 	 * Case 1a.
 	 */
 	public boolean isValidContact() {
-
-		return true;
+		if (lastName.equals("")) return false; 
+		else return true;
+		@Ethan
 
 	}
 
@@ -79,8 +80,7 @@ public class Contact implements Comparable<Contact> {
 	 * finding by last name.
 	 */
 	public String getLastName() {
-
-		return "getLastName functions!";
+		return lastName;
 	}
 
 	/**
