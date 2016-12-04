@@ -71,7 +71,7 @@ public class Contact implements Comparable<Contact> {
 	public boolean isValidContact() {
 		if (lastName.equals("")) return false; 
 		else return true;
-		@Ethan
+		//@Ethan
 
 	}
 
