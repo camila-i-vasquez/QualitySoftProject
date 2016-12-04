@@ -18,12 +18,12 @@ public class Contact implements Comparable<Contact> {
 	private String phoneNumber;
 	private String notes;
 
-	private static final String FIRSTNAMEPROMPT = "First Name: ";
-	private static final String LASTNAMEPROMPT = "Last Name: ";
-	private static final String STREETADDRESSPROMPT = "StreetAddress: ";
-	private static final String EMAILADDRESSPROMPT = "Email Address: ";
-	private static final String PHONENUMBERPROMPT = "Phone Number: ";
-	private static final String NOTESPROMPT = "Notes: ";
+	private static final String FIRST_NAME_PROMPT = "First Name: ";
+	private static final String LAST_NAME_PROMPT = "Last Name: ";
+	private static final String STREET_ADDRESS_PROMPT = "StreetAddress: ";
+	private static final String EMAIL_ADDRESS_PROMPT = "Email Address: ";
+	private static final String PHONE_NUMBER_PROMPT = "Phone Number: ";
+	private static final String NOTES_PROMPT = "Notes: ";
 
 	/**
 	 * Read a contact from in using the prompt strings, printed to out,
@@ -32,7 +32,7 @@ public class Contact implements Comparable<Contact> {
 	 * and everything else in one place.
 	 */
 	public void readContact(PrintStream output, Scanner input) {
-
+	//Ethan
 	}
 
 	/**
