@@ -52,7 +52,7 @@ public class ContactListApp {
 		
 		Contact contactTwo = new Contact();
 		contactTwo.readContact(output, input);
-		System.out.println(contactOne.toString());
+		System.out.println(contactTwo.toString());
 		
 	}
 
