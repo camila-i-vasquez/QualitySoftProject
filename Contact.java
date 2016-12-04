@@ -32,7 +32,19 @@ public class Contact implements Comparable<Contact> {
 	 * and everything else in one place.
 	 */
 	public void readContact(PrintStream output, Scanner input) {
-	//Ethan
+		output.print(FIRST_NAME_PROMPT);
+		firstName = input.nextLine();
+		output.print(LAST_NAME_PROMPT);
+		lastName = input.nextLine();
+		output.print(STREET_ADDRESS_PROMPT);
+		streetAddress = input.nextLine();
+		output.print(EMAIL_ADDRESS_PROMPT);
+		emailAddress = input.nextLine();
+		output.print(PHONE_NUMBER_PROMPT);
+		phoneNumber = input.nextLine();
+		output.print(NOTES_PROMPT);
+		notes = input.nextLine();
+		//@Ethan
 	}
 
 	/**
