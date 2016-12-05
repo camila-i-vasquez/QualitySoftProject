@@ -50,8 +50,7 @@ public class Contact implements Comparable<Contact> {
 
 	/**
 	 * Return a string for displaying the contact for when you want to either
-	 * print or display an individual contact. This should include new lines,
-	 * and can use the prompt strings.
+	 * print or display an individual contact.
 	 */
 	public String toString() {
 		
