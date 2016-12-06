@@ -20,7 +20,7 @@ public class Contact implements Comparable<Contact> {
 
 	private static final String FIRST_NAME_PROMPT = "First Name: ";
 	private static final String LAST_NAME_PROMPT = "Last Name: ";
-	private static final String STREET_ADDRESS_PROMPT = "StreetAddress: ";
+	private static final String STREET_ADDRESS_PROMPT = "Street Address: ";
 	private static final String EMAIL_ADDRESS_PROMPT = "Email Address: ";
 	private static final String PHONE_NUMBER_PROMPT = "Phone Number: ";
 	private static final String NOTES_PROMPT = "Notes: ";
