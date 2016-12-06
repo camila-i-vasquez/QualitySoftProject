@@ -23,7 +23,7 @@ public class ContactListApp {
 		Contact contactOne = new Contact();
 		contactOne.readContact(output, input);
 		System.out.println(contactOne.toString());
-		System.out.println("Testing if validContact functions: " + contactOne.validContact());
+		System.out.println("Testing if validContact functions: " + contactOne.isValidContact());
 		System.out.println(contactOne.getLastName());
 
 		Contact contactTwo = new Contact();
