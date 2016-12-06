@@ -54,9 +54,10 @@ public class Contact implements Comparable<Contact> {
 	 */
 	public String toString() {
 		
-		return "Name: " + firstName + " " + lastName + "\n" + STREET_ADDRESS_PROMPT + streetAddress + "\n"
-				+ EMAIL_ADDRESS_PROMPT + emailAddress + "\n" + PHONE_NUMBER_PROMPT + phoneNumber + "\n"
-				+ NOTES_PROMPT + notes + " \n";
+		return "Name:           " + firstName  + lastName + "\n" + STREET_ADDRESS_PROMPT + " "
+				 + streetAddress + "\n" + EMAIL_ADDRESS_PROMPT + " " + emailAddress + "\n" + 
+				PHONE_NUMBER_PROMPT +"  " + phoneNumber + "\n" + 
+				NOTES_PROMPT +"         " + notes + " \n";
 		//@Camila
 	}
 
