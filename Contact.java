@@ -5,7 +5,7 @@
  * method to keep all the details of how many fields are in a contact in one place, and does not 
  * currently therefore need constructors or set Methods which could be added if needed. Only one 
  * get Method is currently needed for the last name.
- * @Ethan
+ * EToolis
  */
 import java.io.PrintStream;
 import java.util.Scanner;
@@ -30,6 +30,7 @@ public class Contact implements Comparable<Contact> {
 	 * populating all the private variables. Doing the read inside this class
 	 * will make the program more malleable and easier to extend, keeps prompts
 	 * and everything else in one place.
+	 EToolis
 	 */
 	public void readContact(PrintStream output, Scanner input) {
 		output.print(FIRST_NAME_PROMPT);
@@ -45,12 +46,13 @@ public class Contact implements Comparable<Contact> {
 		output.print(NOTES_PROMPT);
 		notes = input.nextLine();
 		output.println();
-		//@Ethan
+		
 	}
 
 	/**
 	 * Return a string for displaying the contact for when you want to either
 	 * print or display an individual contact.
+	 *C Vasquez
 	 */
 	public String toString() {
 		
@@ -58,7 +60,7 @@ public class Contact implements Comparable<Contact> {
 				 + streetAddress + "\n" + EMAIL_ADDRESS_PROMPT + " " + emailAddress + "\n" + 
 				PHONE_NUMBER_PROMPT +"  " + phoneNumber + "\n" + 
 				NOTES_PROMPT +"         " + notes + " \n";
-		//@Camila
+	
 	}
 
 	/**
@@ -66,12 +68,12 @@ public class Contact implements Comparable<Contact> {
 	 * last name blank, then the person will not be entered into the contact
 	 * list." If user does not input a last name, validContact will return false
 	 * otherwise validContact will return true. This will be expanded for Use
-	 * Case 1a.
+	 * Case 1a. E Toolis
 	 */
 	public boolean isValidContact() {
 		if (lastName.equals("")) return false; 
 		else return true;
-		//@Ethan
+		
 
 	}
 
