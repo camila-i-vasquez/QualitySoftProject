@@ -66,8 +66,8 @@ public class Contact implements Comparable<Contact> {
 	/**
 	 * Check that the contact is valid, For Use Case 1 - "If the user leaves the
 	 * last name blank, then the person will not be entered into the contact
-	 * list." If user does not input a last name, validContact will return false
-	 * otherwise validContact will return true. This will be expanded for Use
+	 * list." If user does not input a last name, validContact returns false
+	 * otherwise validContact returns true. This expands for Use
 	 * Case 1a. E Toolis
 	 */
 	public boolean isValidContact() {
@@ -78,7 +78,7 @@ public class Contact implements Comparable<Contact> {
 	}
 
 	/**
-	 * basic method, just return lastName. This will be used for sorting and
+	 * basic method, just return lastName. This is used for sorting and
 	 * finding by last name.
 	 */
 	public String getLastName() {
@@ -86,8 +86,8 @@ public class Contact implements Comparable<Contact> {
 	}
 
 	/**
-	 * compareTo compares this object to the other object, a second contact will
-	 * be passed in as other returns 0 if they are equal returns < 0 if object <
+	 * compareTo compares this object to the other object, a second contact 
+	 * passes in as other returns 0 if they are equal returns < 0 if object <
 	 * other returns > 0 if object > other
 	 */
 	public int compareTo(Contact other) {
