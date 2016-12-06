@@ -33,23 +33,23 @@ public class ContactList implements java.io.Serializable {
 
 	/**
 	 * TODO add a new contact to the list, uses the .add method for
-	 * an ArrayList
+	 * an ArrayList E Toolis
 	 */
 	public void addContact(Contact newPerson) {
 		myContactList.add(newPerson);
-		// @ethan
+
 	}
 
 	/**
 	 * Sorts the ArrayList alphabetically by last name then first name case INsensitive
-	 * and prints that out using the toString method on each contact.
+	 * and prints that out using the toString method on each contact. C Vasquez
 	 */
 	public void printContactList(PrintStream out) {
 		int index = 0;
 		while (myContactList.size() > index) {
 			System.out.println(myContactList.get(index));
 			index++;
-			//@Camila
+
 		}
 	}
 
