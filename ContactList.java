@@ -68,9 +68,9 @@ public class ContactList implements java.io.Serializable {
 	/**
 	 * Saves contacts from program to disk. Using the serialization capabilities
 	 * of our Contact object use the java classes above, primarily File,
-	 * FileOutputStream, ObjectOutputStream and IOException. Should use a
-	 * try-catch construct This should return true if the file is saved
-	 * successfully, otherwise it should return false.
+	 * FileOutputStream, ObjectOutputStream and IOException. Will use a
+	 * try-catch construct. This returns true if the file is saved successfull, otherwise it 
+	 * will return false.
 	 */
 	public boolean saveList(String filename) {
 		return true;
