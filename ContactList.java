@@ -32,7 +32,7 @@ public class ContactList implements java.io.Serializable {
 	private List<Contact> myContactList = new ArrayList<Contact>();
 
 	/**
-	 * TODO add a new contact to the list, which would use the .add method for
+	 * TODO add a new contact to the list, uses the .add method for
 	 * an ArrayList
 	 */
 	public void addContact(Contact newPerson) {
@@ -41,10 +41,8 @@ public class ContactList implements java.io.Serializable {
 	}
 
 	/**
-	 * TODO first the array needs to be sorted alphabetically by last name, and
-	 * then first name case INsensitive, then we can iterate through the sorted
-	 * list and print that to out using the toString method on each contact.
-	 * 
+	 * Sorts the ArrayList alphabetically by last name then first name case INsensitive
+	 * and prints that out using the toString method on each contact.
 	 */
 	public void printContactList(PrintStream out) {
 		int index = 0;
@@ -68,9 +66,9 @@ public class ContactList implements java.io.Serializable {
 	/**
 	 * Saves contacts from program to disk. Using the serialization capabilities
 	 * of our Contact object use the java classes above, primarily File,
-	 * FileOutputStream, ObjectOutputStream and IOException. Will use a
-	 * try-catch construct. This returns true if the file is saved successfull, otherwise it 
-	 * will return false.
+	 * FileOutputStream, ObjectOutputStream and IOException. Uses 
+	 * try-catch construct. This returns true if the file is saved successfull, 
+	 * otherwise it returns false.
 	 */
 	public boolean saveList(String filename) {
 		return true;
@@ -81,8 +79,8 @@ public class ContactList implements java.io.Serializable {
 	 * Loads contacts from disk to launch program using the serialization
 	 * capabilities of our Contact object using the java classes above,
 	 * primarily File, ObjectInputStream, FileInputStream, IOException, and
-	 * FileNotFoundException This should return false if the file is loaded
-	 * successfully, otherwise it should return false
+	 * FileNotFoundException This returns true if the file is loaded cussessfully, 
+	 * otherwise returns false.
 	 */
 	public boolean loadList(String filename) {
 		return true;
