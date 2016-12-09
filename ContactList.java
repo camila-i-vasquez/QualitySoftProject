@@ -59,7 +59,7 @@ public class ContactList implements java.io.Serializable {
 	 * using its toString method. If not found then print "Could not find"
 	 * message.
 	 */
-	public void printContactByName(PrintStream out, String name) {
+	public void searchAndPrintContactByName(PrintStream out, String name) {
 
 	}
 
