@@ -68,7 +68,7 @@ public class Contact implements Comparable<Contact> {
 	 * last name blank, then the person will not be entered into the contact
 	 * list." If user does not input a last name, validContact returns false
 	 * otherwise validContact returns true. This expands for Use
-	 * Case 1a. E Toolis
+	 * Case 1a. E Toolis, C Vasquez
 	 */
 	public boolean isValidContact() {
 		if (lastName.equals("")){
