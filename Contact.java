@@ -80,9 +80,12 @@ public class Contact implements Comparable<Contact> {
 
 	/**
 	 * basic method, just return lastName. This is used for sorting and
-	 * finding by last name.
+	 * finding by last name. C Vasquez
 	 */
 	public String getLastName() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is the last name?");
+		lastName = input.nextLine();
 		return lastName;
 	}
 
