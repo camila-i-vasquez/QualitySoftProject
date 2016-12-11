@@ -71,10 +71,11 @@ public class Contact implements Comparable<Contact> {
 	 * Case 1a. E Toolis
 	 */
 	public boolean isValidContact() {
-		if (lastName.equals("")) return false; 
+		if (lastName.equals("")){
+		System.out.println("Sorry, the contact cannot be added without a last name.");
+		return false; 
+		}
 		else return true;
-		
-
 	}
 
 	/**
