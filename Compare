@@ -1,0 +1,10 @@
+ /**
+  * Compare class tells Sort method how and which data are to be sorted . It compares the FullName of two objects
+  * and returns an integer of the comparison. KA
+  */
+    private class Compare implements Comparator<Contact> { 
+        public int compare(Contact o1, Contact o2) {
+            return o1.getFullName().toUpperCase().compareTo(o2.getFullName().toUpperCase());
+        }
+    }
+
