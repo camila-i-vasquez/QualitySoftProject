@@ -10,7 +10,9 @@
 import java.io.PrintStream;
 import java.util.Scanner;
 
-public class Contact implements Comparable<Contact> {
+public class Contact implements Comparable<Contact>, java.io.Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	private String firstName;
 	private String lastName;
 	private String streetAddress;
@@ -82,8 +84,13 @@ public class Contact implements Comparable<Contact> {
 	 * passes in as other returns 0 if they are equal returns < 0 if object <
 	 * other returns > 0 if object > other
 	 */
-	public int compareTo(Contact other) {
-		return 99;
+	public int compareTo(Contact newContact) { 
+		
+		if (lastName.compareToIgnoreCase(newContact.getLastName()) == 0) { 
+			return firstName.compareToIgnoreCase(newContact.getLastName());
+		}   else {
+			return lastName.compareToIgnoreCase(newContact.getLastName());
+		}
 	}
 
 	/**
