@@ -32,7 +32,7 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 	 * populating all the private variables. Doing the read inside this class
 	 * will make the program more malleable and easier to extend, keeps prompts
 	 * and everything else in one place.
-	 EToolis
+	 EToolis CVasquez
 	 */
 	public boolean readContact(PrintStream output, Scanner input) {
 		output.print(FIRST_NAME_PROMPT);
@@ -83,6 +83,7 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 	 * compareTo compares this object to the other object, a second contact 
 	 * passes in as other returns 0 if they are equal returns < 0 if object <
 	 * other returns > 0 if object > other
+	 S Lee
 	 */
 	public int compareTo(Contact newContact) { 
 		
@@ -95,7 +96,7 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 
 	/**
 	 * Test if two objects are equal, if they are return true, if they are not
-	 * return false.
+	 * return false. S Lee
 	 */
 	public boolean equals(Contact newContact) {
 		if (!this.firstName.equals(newContact.getFirstName())) return false;
