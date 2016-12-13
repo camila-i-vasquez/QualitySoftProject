@@ -71,8 +71,18 @@ public class ContactList implements java.io.Serializable {
 	 * otherwise it returns false.
 	 */
 	public boolean saveList(String filename) {
-		return true;
-
+		try {
+			FileOutputStream fos = new FileOutputStream(fileName);
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			oos.writeObject(myContactList);
+			oos.close();
+			fos.close();
+			return true;
+		} catch (IOException ioe) {
+			System.out.println("Failed to save");
+			ioe.printStackTrace();
+			return false;
+		}
 	}
 
 	/**
