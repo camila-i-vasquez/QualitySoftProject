@@ -85,14 +85,32 @@ public class ContactList implements java.io.Serializable {
 		}
 	}
 
-	/**
+/**
 	 * Loads contacts from disk to launch program using the serialization
 	 * capabilities of our Contact object using the java classes above,
 	 * primarily File, ObjectInputStream, FileInputStream, IOException, and
-	 * FileNotFoundException This returns true if the file is loaded cussessfully, 
-	 * otherwise returns false.
+	 * FileNotFoundException This returns true if the file is loaded successfully, 
+	 * otherwise returns false C Vasquez, E Toolis.
 	 */
-	public boolean loadList(String filename) {
+	public boolean loadList(String fileName) {
+        try
+        {
+            FileInputStream fis = new FileInputStream(fileName);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            myContactList = (list<Contact>) ois.readObject();
+            ois.close();
+            fis.close();
+        }catch (FileNotFoundException fnf){
+        	fnf.printStackTrace();
 		return true;
+         }catch(IOException ioe){
+             ioe.printStackTrace();
+             return true;
+          }catch(ClassNotFoundException c){
+             System.out.println("Nothing to load!");
+             c.printStackTrace();
+             return false;
+          }
+   }
+
 	}
-}
