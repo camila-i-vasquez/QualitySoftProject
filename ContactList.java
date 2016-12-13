@@ -99,14 +99,14 @@ public class ContactList implements java.io.Serializable {
 			myContactList = (list<Contact>) ois.readObject();
 			ois.close();
 			fis.close();
+			return true;
 		} catch (FileNotFoundException fnf) {
 			fnf.printStackTrace();
 			return true;
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
-			return true;
+			return false;
 		} catch (ClassNotFoundException c) {
-			System.out.println("Nothing to load!");
 			c.printStackTrace();
 			return false;
 		}
