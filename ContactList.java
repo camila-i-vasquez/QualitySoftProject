@@ -70,7 +70,7 @@ public class ContactList implements java.io.Serializable {
 	 * try-catch construct. This returns true if the file is saved successfull, 
 	 * otherwise it returns false.
 	 */
-	public boolean saveList(String filename) {
+	public boolean saveList(String fileName) {
 		try {
 			FileOutputStream fos = new FileOutputStream(fileName);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
