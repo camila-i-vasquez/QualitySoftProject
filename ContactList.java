@@ -93,24 +93,22 @@ public class ContactList implements java.io.Serializable {
 	 * otherwise returns false C Vasquez, E Toolis.
 	 */
 	public boolean loadList(String fileName) {
-        try
-        {
-            FileInputStream fis = new FileInputStream(fileName);
-            ObjectInputStream ois = new ObjectInputStream(fis);
-            myContactList = (list<Contact>) ois.readObject();
-            ois.close();
-            fis.close();
-        }catch (FileNotFoundException fnf){
-        	fnf.printStackTrace();
-		return true;
-         }catch(IOException ioe){
-             ioe.printStackTrace();
-             return true;
-          }catch(ClassNotFoundException c){
-             System.out.println("Nothing to load!");
-             c.printStackTrace();
-             return false;
-          }
-   }
+		try {
+			FileInputStream fis = new FileInputStream(fileName);
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			myContactList = (list<Contact>) ois.readObject();
+			ois.close();
+			fis.close();
+		} catch (FileNotFoundException fnf) {
+			fnf.printStackTrace();
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+			return true;
+		} catch (ClassNotFoundException c) {
+			System.out.println("Nothing to load!");
+			c.printStackTrace();
+			return false;
+		}
+	}
 
 	}
