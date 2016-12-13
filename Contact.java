@@ -67,21 +67,6 @@ public class Contact implements Comparable<Contact> {
 	}
 
 	/**
-	 * Check that the contact is valid, For Use Case 1 - "If the user leaves the
-	 * last name blank, then the person will not be entered into the contact
-	 * list." If user does not input a last name, validContact returns false
-	 * otherwise validContact returns true. This expands for Use
-	 * Case 1a. E Toolis, C Vasquez
-	 */
-	public boolean isValidContact() {
-		if (lastName.equals("")){
-		System.out.println("Sorry, the contact cannot be added without a last name.");
-		return false; 
-		}
-		else return true;
-	}
-
-	/**
 	 * basic method, just return lastName. This is used for sorting and
 	 * finding by last name. C Vasquez
 	 */
