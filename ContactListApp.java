@@ -60,7 +60,7 @@ public class ContactListApp {
 			else if (command.equals("3")) {
 				output.print("Who do you want to find? ");
 				String lastName = input.nextLine();
-				theList.printContactByName(output, lastName);
+				theList.searchAndPrintContactByName(output, lastName);
 			}
 
 			else if (command.equals("4")) {
