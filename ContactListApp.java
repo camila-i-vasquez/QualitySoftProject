@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ContactListApp {
 	public static void main(String args[]) {
 
-		ContactListApp.taskThreeTest();
+		ContactListApp.finalProgram();
 	}
 
 	public static void taskTwoTest() {
@@ -63,12 +63,47 @@ public class ContactListApp {
 
 
 	public static void finalProgram() {
-		/**
-		 * create a while loop with an if/else statement inside that asks what
-		 * you want to do in console, while giving available prompts, then
-		 * depending on what prompt is input it fulfills different tasks. Sample
-		 * commands: add, print, find, exit
-		 */
+		Scanner input = new Scanner(System.in);
+		PrintStream output = System.out;
+		ContactList theList = new ContactList();
+		Contact nextContact;
+		String command;
+		String saveFile = "Group4.sav";
+		boolean done = false;
+
+		output.println("Welcome to the matrix");
+		theList.loadList(saveFile);
+
+		while (!done) {
+			output.print("[1]Add new contact information\n[2]Print the contact list\n"
+					+ "[3]Search for a contact by last name\n[4]Quit the program\n\n");
+			command = input.nextLine();
+
+			if (command.equals("1")) {
+				nextContact = new Contact();
+				if (nextContact.readContact(output, input))theList.addContact(nextContact);
+				else output.println("Sorry, the contact cannot be added without a last name. \n");
+
+			} else if (command.equals("2")) {
+				theList.printContactList(output);
+			}
+
+			else if (command.equals("3")) {
+				output.print("Who do you want to find? ");
+				String lastName = input.nextLine();
+				theList.printContactByName(output, lastName);
+			}
+
+			else if (command.equals("4")) {
+				theList.saveList(saveFile);
+			//	done = true;
+			}
+
+			else {
+				output.println("I am sorry! Your input is incorrect. Try again.");
+			}
+
+		}
 	}
 }
 
