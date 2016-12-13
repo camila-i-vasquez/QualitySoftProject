@@ -37,6 +37,8 @@ public class Contact implements Comparable<Contact> {
 		firstName = input.nextLine();
 		output.print(LAST_NAME_PROMPT);
 		lastName = input.nextLine();
+		if (lastName.equals(""))
+			return false;
 		output.print(STREET_ADDRESS_PROMPT);
 		streetAddress = input.nextLine();
 		output.print(EMAIL_ADDRESS_PROMPT);
@@ -46,6 +48,7 @@ public class Contact implements Comparable<Contact> {
 		output.print(NOTES_PROMPT);
 		notes = input.nextLine();
 		output.println();
+		return true;
 		
 	}
 
