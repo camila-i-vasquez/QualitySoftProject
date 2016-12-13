@@ -34,7 +34,7 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 	 * and everything else in one place.
 	 EToolis
 	 */
-	public void readContact(PrintStream output, Scanner input) {
+	public boolean readContact(PrintStream output, Scanner input) {
 		output.print(FIRST_NAME_PROMPT);
 		firstName = input.nextLine();
 		output.print(LAST_NAME_PROMPT);
