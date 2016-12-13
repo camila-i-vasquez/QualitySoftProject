@@ -101,6 +101,7 @@ public class ContactList implements java.io.Serializable {
 			fis.close();
 		} catch (FileNotFoundException fnf) {
 			fnf.printStackTrace();
+			return true;
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 			return true;
