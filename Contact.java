@@ -30,8 +30,7 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 	 * Read a contact from in using the prompt strings, printed to out,
 	 * populating all the private variables. Doing the read inside this class
 	 * will make the program more malleable and easier to extend, keeps prompts
-	 * and everything else in one place.
-	 EToolis
+	 * and everything else in one place. @eToolis
 	 */
 	public boolean readContact(PrintStream output, Scanner input) {
 		output.print(FIRST_NAME_PROMPT);
@@ -54,9 +53,8 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 	}
 
 	/**
-	 * Return a string for displaying the contact for when you want to either
-	 * print or display an individual contact.
-	 *C Vasquez
+	 * Returns a string for displaying the contact for when you want to either
+	 * print or display an individual contact. @cVasquez
 	 */
 	public String toString() {
 		
@@ -68,21 +66,24 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 	}
 
 	/**
-	 * basic method, just return lastName. This is used for sorting and
-	 * finding by last name. C Vasquez
+	 * getLastName, basic method so that other methods so that they can get a Contact's
+	 * lastName easily use it to get the last name easily @cVasquez
 	 */
 	public String getLastName() {
 		return lastName;
 	}
-	
+	/**
+	 * getFirstName, same as getLastName - simply to be used in other methods so they can get
+	 * the a Contact's firstName easily @cVasquez
+	 */
 	public String getFirstName() {
 		return firstName;
 	}
 
 	/**
-	 * compareTo compares this object to the other object, a second contact 
-	 * passes in as other returns 0 if they are equal returns < 0 if object <
-	 * other returns > 0 if object > other
+	 * compareTo method - used to sort the Contact List, this method is used in printContactList
+	 * This method also makes sure that the sorting ignores capitalization of names, just sorts them 
+	 * alphabetically @sKyoung
 	 */
 	public int compareTo(Contact newContact) { 
 		
@@ -95,7 +96,7 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 
 	/**
 	 * Test if two objects are equal, if they are return true, if they are not
-	 * return false. @sKyoung
+	 * return false. This is used in method - searchAndPrintByName @sKyoung
 	 */
 	public boolean matches(String name) {
 		if (this.lastName.equalsIgnoreCase(name)) return true;
