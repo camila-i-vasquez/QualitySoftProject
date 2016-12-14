@@ -95,7 +95,7 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 	}
 
 	/**
-	 * Test if two objects are equal, if they are return true, if they are not
+	 * Test if two objects match, if they are return true, if they are not
 	 * return false. This is used in method - searchAndPrintByName @sKyoung
 	 */
 	public boolean matches(String name) {
