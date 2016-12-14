@@ -57,7 +57,6 @@ public class ContactList implements java.io.Serializable {
 			}
 		});
 
-		// needs a sorting routine
 		int index = 0;
 		while (myContactList.size() > index) {
 			out.println(myContactList.get(index));
@@ -74,15 +73,16 @@ public class ContactList implements java.io.Serializable {
 	 */
 	public void searchAndPrintContactByName(PrintStream out, String name) {
 		int index = 0;
-
+		boolean found = false;
 		while (myContactList.size() > index) {
-			if (myContactList.get(index).matches(name))
-				System.out.println(myContactList.get(index));
-			  if (!myContactList.get(index).matches(name)) 
-	                System.out.println("Sorry there is no match to the last name.");
+			if (myContactList.get(index).matches(name)) {
+				out.print(myContactList.get(index).toString());
+				found = true;
+			}
 			index++;
-
 		}
+		if (!found)
+			out.println("Sorry there is no match to the last name.\n");
 
 	}
 
