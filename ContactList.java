@@ -59,7 +59,7 @@ public class ContactList implements java.io.Serializable {
 
 		int index = 0;
 		while (myContactList.size() > index) {
-			out.println(myContactList.get(index));
+			out.print(myContactList.get(index).toString());
 			index++;
 
 		}
