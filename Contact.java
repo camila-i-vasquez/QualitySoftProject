@@ -99,8 +99,6 @@ public class Contact implements Comparable<Contact>, java.io.Serializable {
 	 * return false. This is used in method - searchAndPrintByName @sKyoung
 	 */
 	public boolean matches(String name) {
-		if (this.lastName.equalsIgnoreCase(name)) return true;
-		else return false;
-
+		return (this.lastName.equalsIgnoreCase(name));
 	}
 }
