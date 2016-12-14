@@ -12,7 +12,12 @@ public class ContactListApp {
 
 		ContactListApp.finalProgram();
 	}
-	
+	/**
+	 * This is the main loop that the user will interact with. It prompts the user
+	 * to either input 1, 2, 3, or 4, and does different things based on input. It will keep
+	 * looping back to the menu until the user chooses to save and quit the program ([4])
+	 * This loop also auto loads the last saved file when started up @eToolis
+	 */
 	public static void finalProgram() {
 		Scanner input = new Scanner(System.in);
 		PrintStream output = System.out;
