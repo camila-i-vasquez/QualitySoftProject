@@ -80,7 +80,7 @@ public class ContactList implements java.io.Serializable {
 			index++;
 		}
 		if (!found)
-			out.println("Sorry there is no match to the last name.\n");
+			out.println("Sorry, there is no match for that last name.\n");
 
 	}
 
