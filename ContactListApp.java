@@ -1,4 +1,3 @@
-
 /**
  * ContactListApplication
  * Top level of the program, starting with tests and then becoming the
@@ -7,11 +6,15 @@
 import java.io.PrintStream;
 import java.util.Scanner;
 
-public class ContactListApp {
+public class ContactListAppSwitch {
 	public static void main(String args[]) {
 
 		ContactListApp.finalProgram();
 	}
+public static String prompt() {
+	return "[1]Add new contact information\n[2]Print the contact list\n"
+			+ "[3]Search for a contact by last name\n[4]Quit the program\n\n";
+}
 	/**
 	 * This is the main loop that the user will interact with. It prompts the user
 	 * to either input 1, 2, 3, or 4, and does different things based on input. It will keep
@@ -24,40 +27,37 @@ public class ContactListApp {
 		ContactList theList = new ContactList();
 		Contact nextContact;
 		String command;
-		String saveFile = "Group4.sav";
+		final String saveFile = "Group4.sav";
 		boolean done = false;
 
 		output.println("Welcome to your Contact List");
 		theList.loadList(saveFile);
 
 		while (!done) {
-			output.print("[1]Add new contact information\n[2]Print the contact list\n"
-					+ "[3]Search for a contact by last name\n[4]Quit the program\n\n");
+			output.println(ContactListApp.prompt());
 			command = input.nextLine();
-
-			if (command.equals("1")) {
+			switch(command) {
+			case "1":
 				nextContact = new Contact();
 				if (nextContact.readContact(output, input))theList.addContact(nextContact);
 				else output.println("Sorry, the contact cannot be added without a last name. \n");
-
-			} else if (command.equals("2")) {
+				break;
+			case "2":
 				theList.printContactList(output);
-			}
-
-			else if (command.equals("3")) {
+				break;
+			case "3":
 				output.print("Who do you want to find? ");
 				String lastName = input.nextLine();
 				theList.searchAndPrintContactByName(output, lastName);
-			}
-
-			else if (command.equals("4")) {
+				break;
+			case "4":
 				theList.saveList(saveFile);
 				done = true;
 				output.println("Thank you! Good Bye!");
-			}
-
-			else {
+				break;
+			default:
 				output.println("I am sorry! Your input is incorrect. Try again.");
+				break;
 			}
 
 		}
