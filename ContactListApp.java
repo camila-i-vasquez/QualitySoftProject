@@ -45,7 +45,7 @@ public class ContactListApp {
 			}
 
 			else if (command.equals("3")) {
-				output.print("Who do you want to find? ");
+				output.print("What is the last name? ");
 				String lastName = input.nextLine();
 				theList.searchAndPrintContactByName(output, lastName);
 			}
