@@ -35,8 +35,8 @@ public class ContactList implements java.io.Serializable {
 	private List<Contact> myContactList = new ArrayList<Contact>();
 
 	/**
-	 * TODO add a new contact to the list, uses the .add method for an ArrayList
-	 * E Toolis
+	 * This method will add a new Contact to the list, using the method .add that ArrayList has
+	 * @eToolis
 	 */
 	public void addContact(Contact newPerson) {
 		myContactList.add(newPerson);
@@ -46,7 +46,7 @@ public class ContactList implements java.io.Serializable {
 	/**
 	 * Sorts the ArrayList alphabetically by last name then first name case
 	 * INsensitive and prints that out using the toString method on each
-	 * contact. cVasquez, eToolis
+	 * contact. @cVasquez, @eToolis
 	 */
 
 	public void printContactList(PrintStream out) {
@@ -66,10 +66,10 @@ public class ContactList implements java.io.Serializable {
 	}
 
 	/**
-	 * TODO use an Iterator to cycle through Contacts in contact list, if the
-	 * last name matches name (case INsensnsitive) then print out the Contact
-	 * using its toString method. If not found then print "Could not find"
-	 * message.
+	 * This method uses a while loop to cycle through Contacts in myContactList,
+	 * if the user inputed last name matches one of the last names in the list(case INsensitive)
+	 * then this will print out that contact. If the last name does not match any of the last names,
+	 * then it will print "Sorry there is no match to the last name." @sKyoung
 	 */
 	public void searchAndPrintContactByName(PrintStream out, String name) {
 		int index = 0;
@@ -90,8 +90,8 @@ public class ContactList implements java.io.Serializable {
 	 * Saves contacts from program to disk. Using the serialization capabilities
 	 * of our Contact object use the java classes above, primarily File,
 	 * FileOutputStream, ObjectOutputStream and IOException. Uses try-catch
-	 * construct. This returns true if the file is saved successfull, otherwise
-	 * it returns false.
+	 * construct. This returns true if the file is saved successful, otherwise
+	 * it returns false. @eToolis
 	 */
 	public boolean saveList(String fileName) {
 		try {
