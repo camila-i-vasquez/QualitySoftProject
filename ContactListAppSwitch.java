@@ -46,7 +46,7 @@ public static String prompt() {
 				theList.printContactList(output);
 				break;
 			case "3":
-				output.print("Who do you want to find? ");
+				output.print("What is the last name? ");
 				String lastName = input.nextLine();
 				theList.searchAndPrintContactByName(output, lastName);
 				break;
